@@ -133,3 +133,33 @@
 // 	return number % 3 === 0 || number % 5 === 0 ? 'FizzBuzz' : number % 3 === 0 ? 'Fizz' : number % 5 === 0 ? 'Buzz' : number
 // }
 
+// const arithmetic = (a, b, operator) => {
+// 	switch (operator) {
+// 		case 'add':
+// 			return a + b;
+// 		case 'subtract':
+// 			return a - b;
+// 		case 'multiply':
+// 			return a * b;
+// 		case 'divide':
+// 			return a / b;
+// 		default:
+// 			return NaN;
+// 	}
+// };
+
+
+// function findAllIdx(arr, value) {
+// 	let result = [];
+
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] === value) {
+// 			result.push(i);
+// 		}
+// 	}
+
+// 	return result
+// }
+
+// console.log(findAllIdx([1,0,1,0,0,1], 0))
+
