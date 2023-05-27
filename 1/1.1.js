@@ -87,24 +87,49 @@
 
 
 
-const lettersCount = (str) => {
-	let strToLower = str.toLowerCase();
-	let result = {};
-	let meaning = strToLower[0];
-	let meaningCount = 0;
+// const lettersCount = (str) => {
+// 	let strToLower = str.toLowerCase();
+// 	let result = {};
+// 	let meaning = strToLower[0];
+// 	let meaningCount = 0;
 
-	for (let i = 0; i < str.length; i++) {
-		if (meaning !== strToLower[i]) {
-			meaning = strToLower[i];
-			meaningCount = 0;
-		}
-		if (meaning === strToLower[i]) {
-			meaningCount++;
-			result[meaning] = meaningCount;
-		}
-	}
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (meaning !== strToLower[i]) {
+// 			meaning = strToLower[i];
+// 			meaningCount = 0;
+// 		}
+// 		if (meaning === strToLower[i]) {
+// 			meaningCount++;
+// 			result[meaning] = meaningCount;
+// 		}
+// 	}
 
-	return result
-};
+// 	return result
+// };
 
-console.log(lettersCount('AaaAABbbCcccDddDDd'))
+// console.log(lettersCount('AaaAABbbCcccDddDDd'))
+
+// function finalGrade(exam, projects) {
+// 	if (exam > 90 || projects > 10) return 100;
+// 	else if (exam > 75 && projects >= 5) return 90;
+// 	else if (exam > 50 && projects >= 2) return 75;
+// 	else return 0;
+// }
+
+//  console.log(finalGrade(55, 3));
+
+// 1
+
+// function fizzbuzz(number) {
+// 	if (number % 3 === 0 && number % 5 === 0) return 'FizzBuzz'
+//  	else if (number % 3 === 0) return 'Fizz'
+// 	else if (number % 5 === 0) return 'Buzz'
+// 	else return number
+// }
+
+// 2
+
+// function fizzbuzz(number) {
+// 	return number % 3 === 0 || number % 5 === 0 ? 'FizzBuzz' : number % 3 === 0 ? 'Fizz' : number % 5 === 0 ? 'Buzz' : number
+// }
+
