@@ -56,31 +56,55 @@
 // 	return result;
 // };
 
-function wrapInParagraph(str){
-	let value = str;
-	let string = '';
-	let result = '';
+// function wrapInParagraph(str){
+// 	let value = str;
+// 	let string = '';
+// 	let result = '';
 	
-	for (let i = 0; i < value.length; i++) {
-		if (value[i] !== '\n') {
-			string += value[i];
-		}
+// 	for (let i = 0; i < value.length; i++) {
+// 		if (value[i] !== '\n') {
+// 			string += value[i];
+// 		}
 
-		if (value[i] === '\n' || i == value.length - 1) {
-			if (!result) result = `<p>${string}</p>`;
-			else result = result.concat('\n', `<p>${string}</p>`);
-			string = '';
+// 		if (value[i] === '\n' || i == value.length - 1) {
+// 			if (!result) result = `<p>${string}</p>`;
+// 			else result = result.concat('\n', `<p>${string}</p>`);
+// 			string = '';
+// 		}
+// 	}
+
+// 	return result 
+// }
+
+// const text2 = `some
+// text
+// count
+// Hello
+// what
+// hi`;
+
+// console.log(wrapInParagraph(text2));
+
+
+
+const lettersCount = (str) => {
+	let strToLower = str.toLowerCase();
+	let result = {};
+	let meaning = strToLower[0];
+	let meaningCount = 0;
+
+	for (let i = 0; i < str.length; i++) {
+		if (meaning !== strToLower[i]) {
+			meaning = strToLower[i];
+			meaningCount = 0;
+		}
+		if (meaning === strToLower[i]) {
+			meaningCount++;
+			result[meaning] = meaningCount;
 		}
 	}
 
-	return result 
-}
+	return result
+};
 
-const text2 = `some
-text
-count
-Hello
-what
-hi`;
-
-console.log(wrapInParagraph(text2));
+console.log(lettersCount('AaaAABbbCcccDddDDd'))
