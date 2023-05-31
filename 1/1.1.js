@@ -163,3 +163,46 @@
 
 // console.log(findAllIdx([1,0,1,0,0,1], 0))
 
+// function replaceItemsClear(arr, item, replaceItem) {
+// 	const arrCopy = Object.assign([], arr);
+
+// 	for (let i = 0; i < arrCopy.length; i++) {
+// 		if (arrCopy[i] === item) arrCopy[i] = replaceItem;
+// 	}
+
+// 	return arrCopy;
+// }
+
+// function replaceItemsMutate(arr, item, replaceItem) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (arr[i] === item) arr[i] = replaceItem;
+// 	}
+
+// 	return arr;
+// }
+
+
+
+// const moveToStart = (arr, n) => {
+// 	const arrCopy = arr.slice();
+
+// 	if (arrCopy.length <= n) return arrCopy
+
+// 	return arrCopy.splice(arrCopy.length - n).concat(arrCopy);
+// };
+
+// console.log(moveToStart([1, 2, 3, 4, 5, 6, 7], 6));
+
+// const hasArrays = (arr) => {
+// 	let isArr = false;
+
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (Array.isArray(arr[i]) === true) isArr = true
+// 	}
+
+// 	return isArr;
+// };
+
+// const data1 = [false, true, [], 1, 0, NaN];
+// console.log(hasArrays(data1));
+

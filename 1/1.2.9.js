@@ -8,7 +8,7 @@ const areBracketsBalanced = (str) => {
 		else i++;
 	}
 	str = str.join('');
-	return str ? false : true
+	return str ? false : true;
 };
 
 console.log(areBracketsBalanced('())()(()'))
