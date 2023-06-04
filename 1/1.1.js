@@ -22,6 +22,8 @@
 
 // console.log(compareWithPrecision (1 + 2, 5, 4))
 
+
+
 // function compareWithPrecision(a, b, precision) {
 // 	if (Math.abs(a - b) <= precision) {
 // 		return true
@@ -206,3 +208,106 @@
 // const data1 = [false, true, [], 1, 0, NaN];
 // console.log(hasArrays(data1));
 
+// const getNumbersByParity = (data, parity) => {
+// 	const arrCopy = data.slice();
+// 	switch (parity) {
+// 		case 'even':
+// 			return arrCopy.filter(elem => elem % 2 === 0);
+// 		case 'odd':
+// 			return arrCopy.filter(elem => elem % 2 !== 0);
+// 		default:
+// 			return []	
+// 	}
+
+// };
+
+// const data = [1, 2, 3, 4, 5, 6];
+// console.log(getNumbersByParity(data, 'even'));
+
+// let value = 0;
+
+// function func(arr, sum) {
+// 	sum += arr.shift();
+
+// 	if (arr.length != 0) {
+// 		sum = func(arr, sum);
+// 	}
+
+// 	return sum
+// }
+
+// console.log(func([1,2,3], 0))
+
+// function func(arr) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (Array.isArray(arr[i]) === true) {
+// 			func(arr[i])
+// 		} else {
+// 			arr[i] = arr[i] + '!'
+// 		}
+// 	}
+
+// 	return arr
+// }
+
+// const array = [1, 2, 3, [4, 5], [6, 7, [8, 9, [10, 11]]]]
+
+// console.log(func(array))
+
+// function sequenceSum (begin, end) {
+// 	if (begin > end) return NaN
+// 	else if (begin === end) return begin
+// 	else return begin + sequenceSum (begin += 1, end)
+// }
+
+// console.log(sequenceSum(-3, 3))
+
+
+// function getStringCount(object, sum = 0) {
+	
+// 	for (let key in object) {
+// 		if (typeof object[key] === 'object' && object[key] !== null) {
+// 			sum = getStringCount(object[key], sum)
+// 		} else if (typeof object[key] === 'string') {
+// 			sum += 1
+// 		}
+// 	}
+
+// 	return sum
+// }
+
+// const obj = [1,2,3]
+
+// console.log(getStringCount
+// ([1, 2, 3, null, undefined, NaN]))
+
+// function optionalChaining (obj, chain, i = 0) {
+// 	if (chain.length === 0) return undefined;
+
+// 	if (typeof obj === 'object' && obj !== null && chain[i] in obj) {
+// 	  return optionalChaining(obj[chain[i]], chain, i + 1);
+// 	}
+
+// 	if (i < chain.length) return undefined;
+// 	return obj;
+// }
+
+// const obj = {
+// 	a: {
+// 		b: {
+// 			c: {
+// 				d: {
+
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// console.log(optionalChaining(obj, ["a", "b", "c", "d"]))
+
+
+function partition (array, callback) {
+	//code here
+  }
+  
