@@ -307,7 +307,68 @@
 // console.log(optionalChaining(obj, ["a", "b", "c", "d"]))
 
 
-function partition (array, callback) {
-	//code here
-  }
-  
+// function partition (array, callback = (element) => element) {
+// 	const arrCopy = array.slice()
+// 	const trueArray = []
+// 	const falseArray = []
+
+// 	for (let i = 0; i < arrCopy.length; i++) {
+// 		if (callback(arrCopy[i])) trueArray.push(arrCopy[i])
+// 		if (!callback(arrCopy[i])) falseArray.push(arrCopy[i])
+// 	}
+
+// 	return [trueArray, falseArray]
+// }
+
+// const users = [
+// 	{ 
+// 		'user': 'barney',  
+// 		'age': 36, 
+// 		'active': false 
+// 	},
+
+// 	{ 
+// 		'user': 'fred',    
+// 		'age': 40, 
+// 		'active': true 
+// 	},
+
+// 	{ 
+// 		'user': 'pebbles', 
+// 		'age': 1,  
+// 		'active': false 
+// 	}
+//   ];
+   
+// console.log(partition(users, (element) => element.active ));
+
+// function makeCounter() {
+// 	let count = 0;
+
+// 	return function() {
+		
+// 		console.log(count += 1)
+// 	}
+// }
+
+
+// const once = fn => {
+// 	let value = true
+
+// 	return function() {
+// 		if(value) {
+// 			fn()
+// 			value = false
+// 		}
+// 	};
+// };
+
+// const f = () => console.log('hi!');
+// const onceF = once(f);
+
+// onceF();
+// onceF();
+
+
+
+
