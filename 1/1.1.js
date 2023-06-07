@@ -395,3 +395,124 @@
 // console.log(arr.filter(inRange(1,6)));
 // console.log(arr.filter(inArray([1, 2, 10, undefined])));
 // console.log(arr.filter(notInArray([1, 2, 3, 4, 5, 6, 7, true])));
+
+// const createObjectCalculator = (initialA, initialB) => {
+// 	const obj = {
+// 		a: initialA,
+// 		b: initialB,
+
+// 		read (x, y) {
+// 			this.a = x;
+// 			this.b = y;
+// 		},
+// 		sum () {
+// 			return this.a + this.b;
+// 		},
+// 		mul: function () {
+// 			return this.a * this.b;
+// 		}
+// 	}
+
+// 	return obj
+// };
+
+// const calculator = createObjectCalculator(6, 3);
+// console.log(calculator.sum()); // 2 + 3 = 5
+// console.log(calculator.mul()); // 2 * 3 = 6
+
+// calculator.read(12, 34);
+// console.log(calculator.sum()); // 2 + 3 = 5
+// console.log(calculator.mul()); // 2 * 3 = 6
+
+
+// const getField = (data, field) => {
+// 	if(!Array.isArray(data)) {
+// 		return []
+// 	}
+
+// 	const arrCopy = data.slice();
+
+// 	const arrRes = arrCopy.map(elem => elem[field]);
+
+// 	return arrRes;
+// };
+
+// const data = [
+// 	{
+// 	  name: 'Denis',
+// 	  age: 25,
+// 	},
+// 	{
+// 	  name: 'Ivan',
+// 	},
+// 	{
+// 	  name: 'Ann',
+// 	  age: 18,
+// 	},
+//   ];
+  
+//   console.log(getField('age'));
+
+
+// const createUsernames = users => {
+// 	let currentDate = new Date;
+
+// 	users.reduce((acc, user) => {
+// 		user.username = user.firstName.toLowerCase() + user.lastName.toLowerCase()[0] + (currentDate.getFullYear() - user.age);
+// 	}, 0);
+	
+// 	return users
+// };
+
+// const data = [
+// 	{ 
+// 		firstName: 'Emily', 
+// 		lastName: 'N.', 
+// 		country: 'Ireland', 
+// 		continent: 'Europe', 
+// 		age: 30, 
+// 		language: 'Ruby' 
+// 	},
+// 	{ 
+// 		firstName: 'Nor', 
+// 		lastName: 'E.', 
+// 		country: 'Malaysia', 
+// 		continent: 'Asia', 
+// 		age: 20, 
+// 		language: 'Clojure' 
+// 	}
+// 	];
+
+// const processedData = createUsernames(data);
+// console.log(processedData); // [
+// { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby',
+//  username: 'emilyn1990' },
+// { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure',
+//  username: 'nore2000' }
+// ];
+
+// const calculatePrice = (orders) => {
+// 	if(!orders) return 0
+// 	return orders.reduce((acc, product) => {
+// 		acc += product.price;
+// 		return acc;
+// 	}, 0);
+// };
+
+// const data = [
+// 	{
+// 		type: 'food',
+// 		price: 130,
+// 	},
+// 	{
+// 		type: 'clothes',
+// 		price: 7300,
+// 	},
+// 	{
+// 		type: 'other',
+// 		price: 1400,
+// 	},
+// ];
+
+// console.log(calculatePrice(data));
+
