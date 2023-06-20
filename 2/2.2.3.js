@@ -20,13 +20,11 @@ function deepEqual (obj1, obj2) {
 	if (typeof obj1 === 'object' && typeof obj2 === 'object' && obj1 !== null && obj2 !== null) {
 		firstValue = comparisonObject (obj1, obj2)
 		secondValue = comparisonObject (obj2, obj1)
+
+		return firstValue && secondValue
 	}
-
-	if (typeof obj1 !== 'object' || typeof obj2 !== 'object' || obj1 === null || obj2 === null) return obj1 === obj2
-
-	if (!firstValue || !secondValue) return false
-
-	else return true
+	
+	return obj1 === obj2
 }
 
 const firstObject = {
