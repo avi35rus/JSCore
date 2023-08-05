@@ -1,16 +1,18 @@
 ```
 1. Регистрация
 ```
-![image](https://github.com/avi35rus/JSCore/assets/104028363/1f7115a6-1ee1-4cb3-9bf4-f172f860683e)
+![image](https://github.com/avi35rus/JSCore/assets/104028363/26790b7e-b095-41c1-86cb-c2c0f7d1447e)
 
 
 ```
 2. Авторизация
 ```
-![image](https://github.com/avi35rus/JSCore/assets/104028363/07ec7764-a69e-47cb-9e23-bbac55f11390)
+![image](https://github.com/avi35rus/JSCore/assets/104028363/9ec575df-6016-4ae7-aecb-260f55b25a03)
+
 
 ```
 3. Получение данных
 ```
-![image](https://github.com/avi35rus/JSCore/assets/104028363/35e46344-bd56-45ad-8787-6e690a0ac4e0)
+![image](https://github.com/avi35rus/JSCore/assets/104028363/06518e62-e0c5-4c1e-8b08-5765434d1fa1)
+
 
