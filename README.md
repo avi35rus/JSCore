@@ -1,7 +1,8 @@
 ```
 __1. Регистрация__
-![image](https://github.com/avi35rus/JSCore/assets/104028363/1f7115a6-1ee1-4cb3-9bf4-f172f860683e)
 ```
+![image](https://github.com/avi35rus/JSCore/assets/104028363/1f7115a6-1ee1-4cb3-9bf4-f172f860683e)
+
 
 ```
 __2. Авторизация__
